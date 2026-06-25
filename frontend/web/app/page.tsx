@@ -266,7 +266,7 @@ export default function RapHub() {
         }}
       />
 
-      {/* AI Facts */}
+      {/* AI Facts Modal simulation */}
       <div className="fixed bottom-28 right-8 bg-zinc-900/90 backdrop-blur p-6 rounded-3xl max-w-xs glass hidden lg:block">
         <div className="text-xs uppercase tracking-widest mb-2 text-red-400">Нейросетные факты</div>
         <div className="text-sm leading-relaxed text-zinc-300">
