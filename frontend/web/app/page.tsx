@@ -59,7 +59,7 @@ export default function RapHub() {
     setIsPlaying(true);
     if (audioRef.current) {
       audioRef.current.src = track.audioUrl;
-      audioRef.current.play().catch(e => console.log('Playback error', e));
+      audioRef.current.play();
     }
   };
 
