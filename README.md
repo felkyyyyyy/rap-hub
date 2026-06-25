@@ -1,25 +1,24 @@
 # Rap Hub
 
-**Стриминговый сервис для новой школы русского рэпа** 🎧
+**Веб-версия стримингового сервиса для новой школы русского рэпа** 🎧
 
-Полностью рабочий прототип с MZLFF и 10+ реальными треками.
+Современный сайт в стиле **Яндекс Музыка**.
+
+## Технологии
+- Next.js 15 (App Router)
+- Tailwind CSS
+- TypeScript
+- FastAPI backend (остаётся)
 
 ## Запуск
 
-**Backend**
 ```bash
-cd backend
-pip install -r requirements.txt
+# Frontend
+cd frontend/web
+npm install
+npm run dev
+
+# Backend (в другом терминале)
+cd ../../backend
 uvicorn main:app --reload
 ```
-
-**Desktop**
-```bash
-cd frontend/desktop
-pip install -r requirements.txt
-python main.py
-```
-
-MZLFF полностью реализован: альбомы, треки, плеер.
-
-Готов к расширению!
