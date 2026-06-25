@@ -1,38 +1,25 @@
 # Rap Hub
 
-**Стриминговый сервис для новой школы русского рэпа с нейросетным мозгом** 🎤🔥
+**Стриминговый сервис для новой школы русского рэпа** 🎧
 
-Современное десктопное приложение + веб-платформа в стиле Яндекс Музыки / Spotify.
+Полностью рабочий прототип с MZLFF и 10+ реальными треками.
 
-## Особенности
-- Красивый тёмный интерфейс с glassmorphism
-- Реальные треки и альбомы русских рэп-исполнителей
-- AI-факты об артистах (через Groq + Serper)
-- Поиск, рекомендации, плеер
-- PySide6 Desktop + FastAPI backend
+## Запуск
 
-## Быстрый старт
-
-### Backend
+**Backend**
 ```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-### Desktop
+**Desktop**
 ```bash
 cd frontend/desktop
 pip install -r requirements.txt
 python main.py
 ```
 
-## Стек
-- **Backend**: FastAPI + Python
-- **Desktop**: PySide6
-- **AI**: Groq Llama-3.3-70B + Serper.dev
-- **Музыка**: iTunes API, MusicBrainz, Deezer Preview
+MZLFF полностью реализован: альбомы, треки, плеер.
 
----
-
-Made with ❤️ for Russian Rap New School
+Готов к расширению!
