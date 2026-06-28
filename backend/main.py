@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="Rap Hub API")
+app = FastAPI(title="Rap Hub Backend")
 
 app.add_middleware(
     CORSMiddleware,
@@ -12,14 +12,14 @@ app.add_middleware(
 )
 
 @app.get("/")
-def read_root():
-    return {"message": "Rap Hub Backend is running!"}
+def root():
+    return {"message": "Rap Hub API is running. Russian rap streaming backend."}
 
 @app.get("/artists")
 def get_artists():
     return [
-        {"id": 1, "name": "MZLFF", "slug": "mzlff"},
-        {"id": 2, "name": "Pharaoh", "slug": "pharaoh"},
+        {"id": 1, "name": "MZLFF", "genre": "trap"},
+        {"id": 2, "name": "Pharaoh", "genre": "cloud rap"}
     ]
 
-# TODO: добавить эндпоинты для треков, поиска, AI-фактов
+# TODO: Add tracks, auth, AI facts endpoint with Groq/Grok

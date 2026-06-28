@@ -1,20 +1,29 @@
-# Rap Hub
+# Rap Hub 🎤
 
-Веб-приложение для стриминга русской рэп-музыки новой школы.
+**Полноценный прототип стримингового сервиса русской рэп-музыки**
 
-## Описание
-Аналог Spotify / Яндекс.Музыка с фокусом на русский рэп (MZLFF, Pharaoh и др.).
+## Функционал
+- ✅ Красивая главная с баннером MZLFF
+- ✅ Интерактивный нижний плеер
+- ✅ Страницы артистов с AI-фактами
+- ✅ Поиск и библиотека
+- ✅ Адаптивный дизайн (glassmorphism, тёмная тема)
 
 ## Стек
-- **Frontend**: Next.js 15 App Router, TypeScript, Tailwind CSS, Glassmorphism
-- **Дизайн**: Тёмная тема, красный акцент
+**Frontend**: Next.js 15 + TypeScript + Tailwind
+**Backend**: FastAPI (Python) — stub в `/backend`
 
-## Структура
-- Главная с герой-баннером
-- Поиск
-- Страницы артистов и альбомов
-- Нижний плеер
+## Запуск
+```bash
+# Frontend
+npm run dev
 
-Репозиторий: https://github.com/felkyyyyyy/rap-hub
+# Backend (отдельно)
+cd backend
+pip install fastapi uvicorn
+uvicorn main:app --reload
+```
 
-Разработка в процессе. Pull requests welcome!
+**GitHub**: https://github.com/felkyyyyyy/rap-hub
+
+Готов к дальнейшей разработке: плейлисты, рекомендации, реальные аудио, PWA.
